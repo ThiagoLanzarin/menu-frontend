@@ -1,4 +1,4 @@
-import logomarca from "@/assets/logomarca.png"
+import logomarca from "@/assets/logomarca.svg"
 import { SpotButton } from "@/cases/spots/components/spot-button"
 
 export function Header() {
