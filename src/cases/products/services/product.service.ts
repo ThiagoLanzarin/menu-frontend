@@ -4,8 +4,10 @@ import type { ProductDTO } from '../dtos/product.dto'
 const ENDPOINT = '/products'
 
 export const ProductService = {
-  async listAll(): Promise<ProductDTO[]> {
-    const result = await api.get<ProductDTO[]>(ENDPOINT)
+  async listAll(categoryId?: string): Promise<ProductDTO[]> {
+    const result = await api.get<ProductDTO[]>(ENDPOINT, {
+      params: categoryId ? { categoryId } : undefined,
+    })
     return result.data
   },
 

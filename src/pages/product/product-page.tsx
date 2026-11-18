@@ -1,5 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { useCategory } from "@/cases/categories/hooks/use-category";
+import { ProductList } from "@/cases/products/components/product-list";
 
 export function ProductPage() {
     const [searchParams] = useSearchParams();
@@ -14,6 +15,8 @@ export function ProductPage() {
                     {selectedCategory.name}
                 </h2>
             )}
+
+            <ProductList categoryId={categoryId ?? undefined} />
         </div>
     )
 }

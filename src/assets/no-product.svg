@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Produto sem imagem">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8E1D6"/>
+      <stop offset="1" stop-color="#DDD4C6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <!-- Prato -->
+  <ellipse cx="200" cy="206" rx="112" ry="12" fill="#193D2D" opacity="0.08"/>
+
+  <!-- Hambúrguer -->
+  <g fill="none" stroke="#193D2D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.35">
+    <!-- Pão de cima -->
+    <path d="M132 142 C132 96 268 96 268 142 Z"/>
+    <!-- Gergelim -->
+    <path d="M172 118 l6 -3 M200 110 l6 -3 M226 120 l6 -3"/>
+    <!-- Alface -->
+    <path d="M126 154 q12 10 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0"/>
+    <!-- Carne -->
+    <rect x="130" y="164" width="140" height="16" rx="8"/>
+    <!-- Pão de baixo -->
+    <path d="M134 190 h132 a8 8 0 0 1 -8 12 h-116 a8 8 0 0 1 -8 -12 Z"/>
+  </g>
+
+  <text x="200" y="248" text-anchor="middle"
+    font-family="'Roboto Condensed', 'Arial Narrow', sans-serif"
+    font-size="18" font-weight="700" letter-spacing="3"
+    fill="#193D2D" opacity="0.45">SEM IMAGEM</text>
+</svg>
